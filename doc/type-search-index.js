@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"TugasIndividu","l":"BuahApel"},{"p":"TugasIndividu","l":"BuahJambu"},{"p":"TugasIndividu","l":"Komoditas"},{"p":"TugasIndividu","l":"Main"},{"p":"TugasIndividu","l":"Penghijauan"},{"p":"TugasIndividu","l":"PohonApel"},{"p":"TugasIndividu","l":"PohonJambu"}];updateSearchResults();

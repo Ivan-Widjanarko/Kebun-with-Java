@@ -8,7 +8,19 @@ package TugasIndividu;
  */
 
 public interface Penghijauan {
+	
+	/**
+     * method for fotosintesis
+     */	
 	public void fotosintesis();
+	
+	/**
+     * method for tumbuhDaun
+     */	
 	public void tumbuhDaun();
+	
+	/**
+     * method for rontokDaun
+     */	
 	public void rontokDaun();
 }

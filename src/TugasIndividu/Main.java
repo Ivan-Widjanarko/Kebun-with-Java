@@ -1,7 +1,5 @@
 package TugasIndividu;
 
-import java.util.ArrayList;
-
 /**
  * Class for Main
  *
@@ -13,7 +11,7 @@ public class Main {
 	
 	/**
      * method for entry point (main method)
-     * @param  userInput  List of User Input (Integer)
+     * @param  args  Command Line Arguments (String)
      */
 	public static void main(String[] args) {
 		int duration = 0;

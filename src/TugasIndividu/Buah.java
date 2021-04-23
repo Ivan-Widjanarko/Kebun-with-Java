@@ -4,13 +4,33 @@ package TugasIndividu;
  * Abstract Class for Buah
  *
  * @author Ivan Widjanarko
- * @version 22-04-2021
+ * @version 23-04-2021
  */
 
-public abstract class Buah {
+abstract class Buah {
+	
+
+	/**
+	 * The variable of taste
+	 */
 	public String taste;
+	
+	/**
+	 * The variable of age
+	 */
 	public String age;
 	
+	/**
+     * Constructor for objects of class Buah
+     */
+	public Buah() {
+		
+	}
+	
+	/**
+     * method for ubahRasa
+     * @param age usia tumbuhan (hari)
+     */	
 	public void ubahRasa(int age) {
 		if(age <= 10) {
 			taste = "Belum Muncul Buah";
