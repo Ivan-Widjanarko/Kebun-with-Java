@@ -8,7 +8,7 @@ import java.util.Random;
  * Class for PohonApel
  *
  * @author Ivan Widjanarko
- * @version 22-04-2021
+ * @version 23-04-2021
  */
 
 public class PohonApel extends Tumbuhan implements Penghijauan, Komoditas {
@@ -73,7 +73,9 @@ public class PohonApel extends Tumbuhan implements Penghijauan, Komoditas {
 		int randFruit = randomFruit.nextInt(3) + 1;
 		for(int day = 0; day < age; day ++) {
 			for (int temp = 0; temp < randFruit; temp++) {
-				fruits.add(new BuahApel(age));
+				if(day >= 10) {
+					fruits.add(new BuahApel(day));
+				}
 			}
 		}
 	}
@@ -119,11 +121,17 @@ public class PohonApel extends Tumbuhan implements Penghijauan, Komoditas {
             else if (buah.age == "Tua") {
                 countTua++;
             }
-            else if (buah.age == "Busuk") {
+            else if (buah.taste == "Busuk") {
                 countBusuk++;
             }
         });
 
+		for (int i = 0; i <= countMasak; i++) {
+			price += 5000;
+		}
+		
+		setHarga(price);
+		
 		DecimalFormat formatValue = new DecimalFormat("####0.00");
         System.out.println("Hari Ke = " + age + "\n" +
         "Pohon = " + type + "\n" +
@@ -135,7 +143,8 @@ public class PohonApel extends Tumbuhan implements Penghijauan, Komoditas {
         "\tTua = " + countTua + " buah\n" +
         "\tBusuk = " + countBusuk + " buah\n" +
         "CO2 yang Diserap = " + gasCO2 + " partikel\n" +
-        "O2 yang Dihasilkan = " + gasO2 + " partikel\n" );
+        "O2 yang Dihasilkan = " + gasO2 + " partikel\n" +
+        "Harga = " + getHarga() + " Rupiah\n");
 
         countMuda = 0;
         countMasak = 0;

@@ -4,7 +4,7 @@ package TugasIndividu;
  * Interface for Penghijauan
  *
  * @author Ivan Widjanarko
- * @version 22-04-2021
+ * @version 23-04-2021
  */
 
 public interface Penghijauan {

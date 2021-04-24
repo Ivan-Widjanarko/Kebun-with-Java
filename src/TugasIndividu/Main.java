@@ -4,7 +4,7 @@ package TugasIndividu;
  * Class for Main
  *
  * @author Ivan Widjanarko
- * @version 22-04-2021
+ * @version 23-04-2021
  */
 
 public class Main {
